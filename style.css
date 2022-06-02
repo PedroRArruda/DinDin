@@ -1,17 +1,18 @@
-:root{
+:root {
     --background-color: #2E948A;
     --text-color: #FF4081;
+    --title-color: #009688;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     list-style: none;
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
 }
-header{
-    width: 100%;
+
+header {
     background-color: var(--background-color);
     display: flex;
     justify-content: space-between;
@@ -19,20 +20,142 @@ header{
     padding: 1rem 3rem;
 }
 
-.cabeça{
+.cabeça {
     display: flex;
     padding: 10px;
-   
+
 }
 
-header a{
+header a {
     font-size: 20px;
     font-weight: 700;
     padding: 5px;
     color: white;
 }
 
-footer{
+.primeiro {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.primeiro section {
+    margin: 180px;
+    margin-top: -20px;
+}
+
+.primeiro h1 {
+    color: var(--text-color);
+    font-size: 60px;
+    width: 488px;
+    margin: 10px;
+    margin-top: 125px;
+}
+
+.primeiro h2 {
+    font-size: 27px;
+    color: #555555;
+    width: 462px;
+    margin: 10px;
+
+}
+
+#saber {
+    font-size: 27px;
+    width: 268px;
+    height: 51px;
+    background-color: white;
+    color: var(--text-color);
+    border: 2px solid #FF4081;
+    border-radius: 62px;
+}
+
+.primeiro aside {
+    margin-top: 100px;
+}
+
+.segundo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #f6f6f6;
+}
+
+.segundo h2{
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.segundo h3 {
+    width: 293px;
+    height: 60px;
+    font-size: 17px;
+    font-weight: 300;
+    margin: 10px;
+    text-align: center;
+}
+
+.preen {
+    background: #FF4081;
+    color: white;
+    width: 233px;
+    height: 51px;
+    border: none;
+    border-radius: 62px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    margin: 10px;
+    position: relative;
+    right: -28px;
+}
+
+#feedback{
+    color: var(--title-color);
+    margin: 30px;
+    font-size: 37px;
+    font-weight: 700;
+}
+
+.terceiro section {
+    display: flex;
+    
+}
+
+.texto{
+    flex-direction: column;
+    margin-left: 37px;
+}
+
+.terceiro h4{
+    margin-bottom: 9px;
+    width: 363px;
+    height: 70px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.terceiro h5{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.quarto{
+    display: flex;
+    justify-content: center;
+    background-color: #f6f6f6;
+}
+
+.retangulo{
+    width: 319px;
+    height: 193px;
+    background-color: #c4c4c4;
+    margin-left: 109px;
+    margin-right: 109px;
+}
+
+footer {
     background-color: var(--background-color);
     display: flex;
     justify-content: space-between;
@@ -40,14 +163,14 @@ footer{
     padding: 1rem 3rem;
 }
 
-footer a{
+footer a {
     font-size: 20px;
     font-weight: 400;
     padding: 5px;
     color: white;
 }
 
-footer button{
+footer button {
     background-color: var(--background-color);
     border-radius: 62px;
     border: 2px solid;
@@ -57,5 +180,11 @@ footer button{
     align-items: center;
     flex-wrap: wrap;
     margin: 13px;
-    
+
+}
+
+@media only screen and (max-width: 480px) {
+    main h1 {
+        font-size: 40px;
+    }
 }
