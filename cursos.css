@@ -60,23 +60,23 @@ main aside h2{
     font-size: 20px;
 }
 
-.segundo{
+.cursos{
     display: flex;
     flex-direction: column;
     margin-left: 112px;
 }
 
-.segundo .divi3{
+.cursos .divi3{
     display: flex;
     flex-wrap: wrap;
 }
 
-.segundo .divi3 section{
+.cursos .divi3 section{
     margin-bottom: 50px;
     justify-content: center;
 }
 
-.segundo section h2{
+.cursos section h2{
     color: var(--text-color);
     font-size: 35px;
     font-weight: 700;
@@ -84,7 +84,7 @@ main aside h2{
     margin-left: 53px;
 }
 
-.segundo section h3{
+.cursos section h3{
     width: 724px;
     font-size: 18px;
     font-weight: 300;
@@ -144,16 +144,16 @@ footer button {
 
 @media (max-width: 830px) {
 
-    .segundo{
+    .cursos{
        margin: auto;
        margin-right: 35px;
     }
 
-    .segundo section h2{
+    .cursos section h2{
         width: auto;
     }
 
-    .segundo section h3{
+    .cursos section h3{
         width: auto;
     }
 

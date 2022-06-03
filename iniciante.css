@@ -12,6 +12,14 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+hr{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    background-color: #c4c4c4;
+}
+
 header {
     background-color: var(--background-color);
     display: flex;
@@ -33,6 +41,50 @@ header a {
     padding: 5px;
     color: white;
 }
+
+
+
+.first{
+    display: flex;
+    flex-direction: column;
+    margin-right: 112px;
+}
+
+.divi{      
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.first .divi{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.first .divi section{
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.first section h1{
+    color: var(--text-color);
+    font-size: 55px;
+    font-weight: 700;
+    width: 461px;
+    margin: 15px;
+    margin-left: 53px;
+}
+
+.first section h3{
+    width: 461px;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 15px;
+    margin-left: 53px;
+}
+
+
+
 
 footer {
     background-color: var(--background-color);
