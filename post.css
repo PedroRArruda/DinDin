@@ -121,6 +121,10 @@ picture{
     padding-bottom: 50px;
 }
 
+.investimento a{
+    color: white;
+}
+
 .investimento h2 {
     color: var(--text-color);
     font-size: 25px;

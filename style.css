@@ -71,6 +71,10 @@ header a {
     border-radius: 62px;
 }
 
+#saber a{
+    color: var(--text-color);
+}
+
 .primeiro aside {
     margin-top: 100px;
 }
@@ -111,6 +115,10 @@ header a {
     margin: 10px;
     position: relative;
     right: -28px;
+}
+
+.preen a{
+    color: white;
 }
 
 #feedback {
