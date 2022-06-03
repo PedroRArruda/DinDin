@@ -6,7 +6,7 @@
 
 * {
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
     list-style: none;
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
@@ -34,6 +34,125 @@ header a {
     color: white;
 }
 
+article{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    width: auto;
+}
+
+.cabeçalho{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 111px;
+}
+
+.cabeçalho h1{
+    font-weight: 500;
+    font-size: 50px;
+    width: 758px;
+    color: var(--text-color);
+}
+
+.cabeçalho h4{
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    width: 758px;
+    color: #9d9d9d;
+}
+
+#retan {
+    width: 1032px;
+    height: 465px;
+    background-color: #c4c4c4;
+    margin-bottom: 70px;
+}
+
+picture{
+    display: flex;
+    justify-content: center;
+}
+
+.texto{  
+    width: 77%;
+    margin-left: 156px;
+}
+
+.texto h2{
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 30px;
+    color:var(--title-color)
+}
+
+.texto h3{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+    padding-bottom: 50px;
+}
+
+#txt{
+    font-size: 50px;
+    font-weight: 500;
+    color: var(--text-color);
+    line-height: 58px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+  }
+
+.investimento {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;    
+    background-color: #f6f6f6;
+    padding-bottom: 50px;
+}
+
+.investimento h2 {
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.investimento h3 {
+    width: 293px;
+    height: 60px;
+    font-size: 17px;
+    font-weight: 300;
+    margin: 10px;
+    text-align: center;
+}
+
+.preen {
+    background: #FF4081;
+    color: white;
+    width: 233px;
+    height: 51px;
+    border: none;
+    border-radius: 62px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    margin: 10px;
+    position: relative;
+    right: -28px;
+    
+}
+
 footer {
     background-color: var(--background-color);
     display: flex;
@@ -57,8 +176,31 @@ footer button {
     width: 289px;
     height: 33px;
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin: 13px;
 
+}
+
+@media (max-width: 830px) {
+    #retan {
+        display: none;
+    }
+
+    .cabeçalho {
+        width: 50%;
+    }
+
+    .cabeçalho h1{
+        font-size: 30px;
+    }
+
+    .cabeçalho h4{
+        width: 50%;
+    }
+
+    .texto{
+        margin-left: 10%;
+    }
 }
