@@ -1,0 +1,165 @@
+:root {
+    --background-color: #2E948A;
+    --text-color: #FF4081;
+    --title-color: #009688;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+hr{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    background-color: #c4c4c4;
+}
+
+header {
+    background-color: var(--background-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+.cabeça {
+    display: flex;
+    padding: 10px;
+
+}
+
+header a {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5px;
+    color: white;
+}
+
+main aside{
+    margin-left: 82px;
+    margin-top: 34px;
+    margin-bottom: 65px;
+}
+
+main aside h1{
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 60px;
+}
+
+main aside h2{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.segundo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 112px;
+}
+
+.segundo .divi3{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.segundo .divi3 section{
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.segundo section h2{
+    color: var(--text-color);
+    font-size: 35px;
+    font-weight: 700;
+    margin: 15px;
+    margin-left: 53px;
+}
+
+.segundo section h3{
+    width: 724px;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 15px;
+    margin-left: 53px;
+}
+
+.divi3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.botao-cursos{
+    background-color: #419488;
+    width: 233px;
+    height: 51px;
+    border-radius: 62px;
+    border: none;
+    margin-left: 53px;
+}
+
+.botao-cursos a{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+footer {
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 3rem;
+}
+
+footer a {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+footer button {
+    background-color: var(--background-color);
+    border-radius: 62px;
+    border: 2px solid;
+    border-color: white;
+    width: 289px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 13px;
+
+}
+
+@media (max-width: 830px) {
+
+    .segundo{
+       margin: auto;
+       margin-right: 35px;
+    }
+
+    .segundo section h2{
+        width: auto;
+    }
+
+    .segundo section h3{
+        width: auto;
+    }
+
+    img{
+        width: 100%;
+        margin-left: -15px;
+    }
+
+}
