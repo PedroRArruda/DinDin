@@ -6,7 +6,7 @@
 
 * {
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
     list-style: none;
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
@@ -34,6 +34,53 @@ header a {
     color: white;
 }
 
+.contato{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main{
+    margin-left: 17%;
+}
+
+main picture{
+    display: flex;
+}
+
+main h1{
+    color: var(--text-color);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+fieldset{
+    border: 0;
+}
+
+input{
+    border-radius: 7px;
+    border: 1px solid;
+    color: #686868;
+    padding: 5px;
+    width: 500px;
+    margin: 1px;
+}
+
+input#mensagem{
+    height: 193px;
+}
+
+#envio{
+    background-color: var(--text-color);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    width: 108px;
+    height: 32px;
+    margin: 20px;
+    margin-left: 0;
+}
+
 footer {
     background-color: var(--background-color);
     display: flex;
@@ -57,8 +104,44 @@ footer button {
     width: 289px;
     height: 33px;
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin: 13px;
 
+}
+
+@media (max-width: 810px) {
+
+    main{
+        margin-left: 6%;
+    }
+
+    input{
+        width: 80%;
+    }
+
+    footer button {
+        width: 100%;
+    }
+
+    form{
+        position: relative;
+    }
+
+    .contato{
+        flex-direction: column;
+    }
+
+}
+
+
+@media (max-width: 475px) {
+    main picture{
+        display: none;
+    }
+
+    input{
+        width: 75%;
+    }
 }

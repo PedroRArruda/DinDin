@@ -6,7 +6,7 @@
 
 * {
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
     list-style: none;
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
@@ -34,6 +34,55 @@ header a {
     color: white;
 }
 
+main article h1{
+    color: var(--title-color);
+    font-size: 47px;
+    font-weight: 700;
+    width: 512px;
+}
+
+main article h3{
+    font-size: 20px;
+    font-weight: 300;
+    width: 461px;
+}
+
+.inicio{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 239px;
+    margin-top: 50px;
+}
+
+.retangulo {
+    width: 518px;
+    height: 259px;
+    background-color: #c4c4c4;
+    margin-bottom: 20px;
+}
+
+.conteudos h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.conteudos h4{
+    font-size: 17px;
+    font-weight: 300;
+    width: 516px;
+}
+
+.conteudos{
+    padding: 50px;
+}
+
+.blogs{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
 footer {
     background-color: var(--background-color);
     display: flex;
@@ -57,8 +106,48 @@ footer button {
     width: 289px;
     height: 33px;
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin: 13px;
+}
 
+
+@media (max-width: 810px) {
+    .inicio{
+        margin-left: 20px;
+    }
+
+    main article h1{
+        font-size: 35px;
+        width: auto;
+    }
+
+    main article h3{
+        width: auto;
+    }
+
+    .retangulo{
+        width: 300px;
+        height: 180px;
+    }
+
+    .conteudos h4{
+        width: auto;
+    }
+
+    .blogs{
+        width: auto;
+        padding: 0;
+    }
+
+    footer button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 410px) {
+    .inicio aside{
+        display: none;
+    }
 }
